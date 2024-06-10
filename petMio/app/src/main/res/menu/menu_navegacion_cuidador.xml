@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iconoReservas"
+        android:icon="@drawable/ic_reservas"
+        android:title="Reservas"
+        />
+    <!--<item
+        android:id="@+id/iconoChat"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat"
+        />-->
+    <item
+        android:id="@+id/iconoConfiguracion"
+        android:icon="@drawable/ic_configuracion"
+        android:title="Configuración"
+        />
+    <item
+        android:id="@+id/iconoPerfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil"
+        />
+</menu>

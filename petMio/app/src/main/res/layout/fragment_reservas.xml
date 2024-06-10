@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/textViewTituloReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="25sp"
+        android:text="Reservas"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <!-- RecyclerView para mostrar las reservas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReservas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"/>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/service_box_background"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/nombreTextView"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/descripcionCortaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/usernameTextView"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/verPerfilButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Ver Perfil"
+        android:layout_below="@id/descripcionCortaTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/eliminarButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/verPerfilButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:backgroundTint="@color/red"
+        android:drawablePadding="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="n" />
+</RelativeLayout>

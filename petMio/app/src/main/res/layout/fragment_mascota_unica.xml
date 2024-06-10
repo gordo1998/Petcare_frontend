@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/animalImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/razaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/edadTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pesoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/enfermedadesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/descripcionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonDeleteMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Mascota"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

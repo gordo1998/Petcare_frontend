@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iconoServicios"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio"
+        />
+    <item
+        android:id="@+id/iconoMascotas"
+        android:icon="@drawable/ic_mascotas"
+        android:title="Mascotas"
+        />
+    <item
+        android:id="@+id/iconoReservas"
+        android:icon="@drawable/ic_reservas"
+        android:title="Reservas"
+        />
+    <item
+        android:id="@+id/iconoFavoritos"
+        android:icon="@drawable/ic_favoritos"
+        android:title="Favoritos"
+        />
+    <item
+        android:id="@+id/iconoPerfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil"
+        />
+
+</menu>

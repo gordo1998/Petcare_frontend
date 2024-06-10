@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/service_box_background"
+    android:layout_marginBottom="8dp">
+
+    <!-- Nombre del Cuidador en Negrita y con Letra Grande -->
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Nombre del Cuidador" />
+
+    <!-- Apellidos del Cuidador en Letra Mediana y Negrita -->
+    <TextView
+        android:id="@+id/apellidosTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Apellidos del Cuidador" />
+
+    <!-- Servicio en Letra Mediana -->
+    <TextView
+        android:id="@+id/servicioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="Servicio" />
+
+    <!-- Mascotas en Letra Pequeña y Cursiva -->
+    <TextView
+        android:id="@+id/mascotasTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:text="Mascotas" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerRazas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la mascota"
+        android:layout_below="@id/spinnerRazas"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edadEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:inputType="number"
+        android:layout_below="@id/nombreEditText"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/pesoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/edadEditText"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/descEnfermedadesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción de enfermedades"
+        android:layout_below="@id/pesoEditText"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/descSobreMascotaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción sobre la mascota"
+        android:layout_below="@id/descEnfermedadesEditText"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/agregarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Mascota"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@id/descSobreMascotaEditText"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

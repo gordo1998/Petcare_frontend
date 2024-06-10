@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PerfilFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewPerfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_perfil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Nombre"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelNombre" />
+
+        <TextView
+            android:id="@+id/labelApellidoUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Primer Apellido"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+        <EditText
+            android:id="@+id/editTextApellidoUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Primer Apellido"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelApellidoUno" />
+
+        <TextView
+            android:id="@+id/labelApellidoDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Segundo Apellido"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextApellidoUno" />
+
+        <EditText
+            android:id="@+id/editTextApellidoDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Segundo Apellido"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelApellidoDos" />
+
+        <TextView
+            android:id="@+id/labelUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre de Usuario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextApellidoDos" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Nombre de Usuario"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelUsername" />
+
+
+
+
+        <TextView
+            android:id="@+id/labelNumMovil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Número Móvil"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+        <EditText
+            android:id="@+id/editTextNumMovil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Número Móvil"
+            android:inputType="phone"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelNumMovil" />
+
+        <TextView
+            android:id="@+id/labelNumTelefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Número Teléfono"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumMovil" />
+
+        <EditText
+            android:id="@+id/editTextNumTelefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Número Teléfono"
+            android:inputType="phone"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelNumTelefono" />
+
+        <TextView
+            android:id="@+id/labelPasswd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumTelefono" />
+
+        <EditText
+            android:id="@+id/editTextPasswd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPasswd" />
+
+        <Switch
+            android:id="@+id/switchPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo Cuidador"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewPerfil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPerfil"
+            app:layout_constraintVertical_bias="0.547" />
+
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="231dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:text="Correo Electrónico"
+            android:gravity="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchPerfil" />
+
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Editar"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPasswd" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:enabled="false"
+            android:text="Guardar"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonEdit"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPasswd" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/buttonDeleteAccount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+        <Button
+            android:id="@+id/buttonDeleteAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="8dp"
+            android:text="Eliminar Cuenta"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonLogout"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
